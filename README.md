@@ -1,3 +1,18 @@
+Hello,
+Here is my solution. I forgot to create a repository at the beginning. That's why I have listed the main steps I'd made :
+```
+1. Created 'Services' section
+2. Created 'ImageContainer', 'StackContainer' components
+3. Created 'Card' collection
+4. Created local database in 'public/data/data.js'
+5. Added 'servicesProps' 'pages/index.js'
+6. Added onClick event on the Button in 'pages/index.js'
+7. Added media-queries in external files for each created by me component
+```
+
+
+
+
 The section that you need to create is shown in **agencyselection.png**
 
 1. The main Section must be placed in the folder sections.
