@@ -11,14 +11,6 @@ import {
 export const Card = ({ title, description, icon, ...props }) => {
   const [text, setText] = useState("");
 
-  useEffect(() => {
-    async function fetchData() {
-      const data = await fetch("/data/data.js");
-      const text = await data.text();
-      setText(text);
-    }
-    fetchData();
-  }, []);
 
   return (
     <StyledStack>
