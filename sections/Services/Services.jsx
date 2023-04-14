@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-import { options } from "../../public/data/data.js";
+import { options } from "../../data/data.js";
 import Image from "next/dist/client/image";
 import { Card } from "../../collections";
 import { StackContainer, ImageContainer } from "../../components";
