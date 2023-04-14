@@ -8,7 +8,7 @@ import {
   StyledIconContainer,
 } from "./elements";
 
-export const Card = ({ option, ...props }) => {
+export const Card = ({ title, description, icon, ...props }) => {
   const [text, setText] = useState("");
 
   useEffect(() => {
@@ -23,12 +23,12 @@ export const Card = ({ option, ...props }) => {
   return (
     <StyledStack>
       <StyledIconContainer>
-        <Image src={option.icon} alt={option.title} width={40} height={40} />
+        <Image src={icon} alt={title} width={40} height={40} />
       </StyledIconContainer>
       <StyledStackTextWrapper>
-        <StyledStackTitle>{option.title}</StyledStackTitle>
+        <StyledStackTitle>{title}</StyledStackTitle>
         <StyledParagraph
-          dangerouslySetInnerHTML={{ __html: option.description }}
+          dangerouslySetInnerHTML={{ __html:description }}
         />
       </StyledStackTextWrapper>
     </StyledStack>
