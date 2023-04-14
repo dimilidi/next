@@ -35,7 +35,7 @@ export const Services = forwardRef(
             </Wrapper>
             <StackContainer>
               {options.map((option, index) => {
-                return <Card key={index} option={option} />;
+                return <Card key={index} {...option} />;
               })}
             </StackContainer>
           </StyledInnerContainer>
